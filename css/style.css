@@ -1,0 +1,123 @@
+:root {
+    --box-size: 200px;
+    --gray: #9aa0a6;
+}
+* {
+    box-sizing: border-box;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+canvas {
+    border: 1px solid black;
+    background-color: darkgrey;
+}
+#canvasdiv {
+    position: relative;
+    display: inline-block;
+}
+#stuff {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#timer {
+    background-color: darksalmon;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+#playerHealth {
+    background-color: crimson;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    bottom: 0;
+}
+#enemyHealth {
+    background-color: crimson;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    width: 100%;
+    bottom: 0;
+}
+
+#sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+#webcam-wrapper {
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: var(--gray);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    
+}
+#webcam-pose-canvas {
+  position: relative;
+}
+#webcam {
+    width: var(--box-size);
+    height: var(--box-size);
+    transform: rotateY(180deg);
+}
+#graph-wrapper > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+#graph-wrapper > div > * {
+    display: inline-block;
+    width: var(--box-size);
+    margin: 0 10px;
+}
+#graph-wrapper > div > :first-child {
+    text-align: right;
+}
+#graph-wrapper > div > progress {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 28px;
+}
+#graph-wrapper > div > progress::-webkit-progress-bar {
+    border-radius: 4px;
+    background-color: var(--color-light);
+    border: 1px solid var(--color);
+}
+#graph-wrapper > div > progress::-webkit-progress-value {
+    border-radius: 2px;
+    background-color: var(--color);
+}
+
+#footer {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#controls {
+    text-align: center;
+}
