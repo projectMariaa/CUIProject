@@ -1,4 +1,5 @@
 # CUIProject - Maria Kuprikova
- Boxing Game for Creating User Interface Class
+ Sepculative User Interface Project: Boxing Game for Creating User Interface Class
  Open in Web Previewer on Visual Studio.
- Sepculative User Interface Project
+
+## Incomplete
